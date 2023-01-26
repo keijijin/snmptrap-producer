@@ -26,7 +26,7 @@ public class SnmpTrapV2cProducerRouteBuilder extends RouteBuilder {
                     ));
                     pdu.add(new VariableBinding(
                             new OID("1.2.3.4.5.1.4"),
-                            new OctetString("Program has an error")
+                            new OctetString("This is SnmpTrap Version2c")
                     ));
                     exchange.getIn().setBody(pdu, PDU.class);
                 })

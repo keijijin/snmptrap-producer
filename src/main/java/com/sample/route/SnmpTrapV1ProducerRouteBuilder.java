@@ -32,7 +32,7 @@ public class SnmpTrapV1ProducerRouteBuilder extends RouteBuilder {
                         ));
                         pduV1.add(new VariableBinding(
                                 new OID("1.2.3.4.5.1.3"),
-                                new OctetString("Error in program")
+                                new OctetString("This is SnmpTrapVersion1")
                         ));
                         exchange.getIn().setBody(pduV1, PDUv1.class);
                 })
